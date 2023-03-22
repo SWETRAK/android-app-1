@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/name_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/name_label_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Imię: "/>
+
+        <EditText
+            android:id="@+id/name_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:inputType="textPersonName"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/name_label_text"
+            android:imeOptions="actionNext"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/surname_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/name_linear_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/surname_label_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nazwisko: "/>
+
+        <EditText
+            android:id="@+id/surname_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:inputType="textPersonName"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/name_label_text"
+            android:imeOptions="actionNext"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/grades_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/surname_linear_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/grades_label_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Liczba ocen: "/>
+
+        <EditText
+            android:id="@+id/grades_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLines="1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/surname_label_text"
+            android:imeOptions="actionDone"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/calculate_grades_mean_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate grades mean"
+        app:layout_constraintTop_toBottomOf="@+id/grades_linear_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
