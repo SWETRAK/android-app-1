@@ -47,7 +47,6 @@ public class SecondFragment extends Fragment {
         gradeList.setLayoutManager(new LinearLayoutManager(this.getActivity()));
 
         return binding.getRoot();
-
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {

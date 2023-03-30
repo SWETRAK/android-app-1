@@ -20,7 +20,7 @@
             android:id="@+id/name_label_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Imię: "/>
+            android:text="@string/imi"/>
 
         <EditText
             android:id="@+id/name_text_input"
@@ -49,7 +49,7 @@
             android:id="@+id/surname_label_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nazwisko: "/>
+            android:text="@string/nazwisko"/>
 
         <EditText
             android:id="@+id/surname_text_input"
@@ -78,7 +78,7 @@
             android:id="@+id/grades_label_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Liczba ocen: "/>
+            android:text="@string/liczba_ocen"/>
 
         <EditText
             android:id="@+id/grades_text_input"
@@ -98,10 +98,18 @@
         android:id="@+id/calculate_grades_mean_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Calculate grades mean"
+        android:text="@string/calculate_grades_mean"
         app:layout_constraintTop_toBottomOf="@+id/grades_linear_layout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:id="@+id/mean_text_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/calculate_grades_mean_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

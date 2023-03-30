@@ -9,6 +9,14 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="nazwisko">Nazwisko:</string>
+    <string name="calculate_grades_mean">Calculate grades mean</string>
+    <string name="liczba_ocen">Liczba ocen:</string>
+    <string name="imi">Imię:</string>
+    <string name="srednia">Oblicz średnia</string>
+    <string name="twoja_srednia">Twoja średnia to %.2f</string>
+    <string name="nie_udalo_sie">Nieststey się nie udało</string>
+    <string name="gratulacje">Gratulacje</string>
 
 
     <string-array name="gradeTypes">

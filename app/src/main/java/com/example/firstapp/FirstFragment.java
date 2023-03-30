@@ -51,11 +51,13 @@ public class FirstFragment extends Fragment {
                 FirstFragment.this.mean = mean;
 
                 if(mean == 0.0) {
-                    binding.calculateGradesMeanButton.setText("Oblicz średnia");
+                    binding.calculateGradesMeanButton.setText(R.string.srednia);
                 } else if (mean < 3.0) {
-                    binding.calculateGradesMeanButton.setText("Nieststey się nie udało");
+                    binding.meanTextBox.setText(String.format(getString(R.string.twoja_srednia), mean));
+                    binding.calculateGradesMeanButton.setText(R.string.nie_udalo_sie);
                 } else {
-                    binding.calculateGradesMeanButton.setText("Gratulacje");
+                    binding.meanTextBox.setText(String.format(getString(R.string.twoja_srednia), mean));
+                    binding.calculateGradesMeanButton.setText(R.string.gratulacje);
                 }
             }
         });
@@ -155,7 +157,6 @@ public class FirstFragment extends Fragment {
             @Override
             public void afterTextChanged(Editable editable) {}
         });
-
     }
 
     @Override
@@ -163,5 +164,4 @@ public class FirstFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
-
 }

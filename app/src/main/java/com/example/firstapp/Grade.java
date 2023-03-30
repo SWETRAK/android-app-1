@@ -25,5 +25,4 @@ public class Grade {
     public void setValue(int value) {
         this.value = value;
     }
-
 }
